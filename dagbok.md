@@ -53,4 +53,5 @@
   - **Prenta Aðferð:**
     - `Batsferd::prenta()` - Aðferð sem sýnir bátsferðarupplýsingar með `std::cout`.
 
-**Batsferd.cpp**
+### Batsferd.cpp
+
