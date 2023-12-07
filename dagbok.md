@@ -54,4 +54,12 @@
     - `Batsferd::prenta()` - Aðferð sem sýnir bátsferðarupplýsingar með `std::cout`.
 
 ### Batsferd.cpp
-
+  - **Smiðir:**
+    - `Batsferd::Batsferd()` - Sjálfgefinn smiður sem byrjar með sjálfgefnum gildum fyrir `yfirbyggdur`.
+    - `Batsferd::Batsferd(int id, int fjoldibokad, int hamarksfjoldi, bool yfirbyggdur)` - Skilgreindur smiður sem stillir gildi með sérstökum hætti, með kalli á `Ferd` smið.
+  
+  - **Aðgangs- og Stillingaraðferðir:**
+    - `getYfirbyggdur()`, `setYfirbyggdur(bool nytt_boolvalue)` - Aðgangs- og stillingaraðferðir fyrir `yfirbyggdur`.
+  
+  - **Prenta Aðferð:**
+    - `Batsferd::prenta()` - Aðferð sem sýnir bátsferðarupplýsingar með `std::cout`, þar sem `ID`, `fjoldibokad`, `hamarksfjoldi` og `yfirbyggdur` eru birtar.
