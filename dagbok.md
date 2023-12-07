@@ -110,7 +110,7 @@
 ### Hjolaferd.cpp
   - **Smiðir:**
     - `Hjolaferd::Hjolaferd()` - Sjálfgefinn smiður sem byrjar með gildið 0 fyrir `lengdklst`.
-    - `Hjolaferd::Hjolaferd(int id, int fjoldibokad, int hamarksfjoldi, int lengdklst)` - Skilgreindur smiður sem stillir gildi með sérstökum hætti, með kalli á `Ferd` smið.
+    - `Hjolaferd::Hjolaferd(int id, int fjoldibokad, int hamarksfjoldi, int lengdklst)` - Skilgreindur smiður sem stillir gildi með sérstökum hætti, með erfi á `Ferd` smið.
   
   - **Aðgangs- og Stillingaraðferðir:**
     - `getLengdklst()`, `setLengdklst(int nytt_lengdklst)` - Aðgangs- og stillingaraðferðir fyrir `lengdklst`.
