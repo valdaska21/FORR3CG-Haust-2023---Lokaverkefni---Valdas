@@ -19,6 +19,8 @@
   
   - **Yfirhlaðning á Samanburðarvirkjum:**
     - `operator==`, `operator!=`, `operator<`, `operator>`, `operator<=`, `operator>=` - Skilgreindir til að bera saman `Ferd` hluti eftir ID og     hámarksfjölda.
+  - **Destructor**
+    - `virtual~Ferd() {}`
 
 **Ferd.cpp**
   - Bjó til `Ferd` class til að halda utan um ferðarupplýsingar.
