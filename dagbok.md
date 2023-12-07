@@ -1,4 +1,12 @@
 # Dagbók
 ---
 - Dagsetning: 12/7/2023  
--- 
+-- Ferd.hpp
+  - Bjó til Ferd.hpp
+  - Bjó til breytur: int id, int fjoldibokad, int hamarksfjoldi. fyrir clasann.
+  - Bjó til klasann Ferd
+  - bó til setter og getter fyrir hverja breytu.
+  - Bjó til Ferd(); og Ferd( með innihaldi );
+  - Bjó til fallið virtual void prenta();
+  - Bjó til operator overload
+  - Bjó til virtual~Ferd() destructor
