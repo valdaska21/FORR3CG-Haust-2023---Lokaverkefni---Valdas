@@ -38,3 +38,19 @@
     - `operator==`, `operator!=`, `operator<`, `operator>`, `operator<=`, `operator>=` - Gerir samanburð á ferðum eftir `id` og `hamarksfjoldi`.
   - Takmörkunareglur:
     - Gildi eru athugað í smiði og `setFjoldibokad()` aðgerð til að tryggja að bókaðir farþegar fara ekki yfir hámarksfjölda.
+
+**Batsferd.hpp**
+  - **Skilgreining á Flokki:**
+    - `Batsferd` flokkur búinn til sem erfir frá `Ferd` til að stjórna bátsferðaupplýsingum með aukabreytunni `yfirbyggdur`.
+  
+  - **Smiðir:**
+    - `Batsferd::Batsferd()` - Sjálfgefinn smiður sem byrjar með sjálfgefnum gildum fyrir breytuna `yfirbyggdur`.
+    - `Batsferd::Batsferd(int id, int fjoldibokad, int hamarksfjoldi, bool yfirbyggdur)` - Skilgreindur smiður sem stillir gildi með sérstökum hætti.
+  
+  - **Aðgangs- og Stillingaraðferðir:**
+    - `getYfirbyggdur()`, `setYfirbyggdur(bool nytt_boolvalue)` - Aðgangs- og stillingaraðferðir fyrir `yfirbyggdur`.
+  
+  - **Prenta Aðferð:**
+    - `Batsferd::prenta()` - Aðferð sem sýnir bátsferðarupplýsingar með `std::cout`.
+
+**Batsferd.cpp**
