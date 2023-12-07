@@ -10,8 +10,9 @@
   - Bjó til fallið virtual void prenta();
   - Bjó til operator overload
   - Bjó til virtual~Ferd() destructor
+
 -- **Ferd.cpp**
-  - Bjó til `Ferd` flokk til að halda utan um ferðarupplýsingar.
+  - Bjó til `Ferd` class til að halda utan um ferðarupplýsingar.
   - Notaði breytur: `id`, `fjoldibokad`, og `hamarksfjoldi` fyrir auðkenni ferðar, bókaða farþega og hámarksfjölda.
   - Að búa til objectið föllin:
     - `Ferd::Ferd()` - Byrjunargildi fyrir `id`, `fjoldibokad`, og `hamarksfjoldi`.
