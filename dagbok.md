@@ -1,6 +1,6 @@
 # Dagbók
 ---
-- Dagsetning: 12/7/2023  
+## **Dagsetning: 12/7/2023**  
   --- **Ferd.hpp**
     - Bjó til Ferd.hpp
     - Bjó til breytur: int id, int fjoldibokad, int hamarksfjoldi. fyrir clasann.
