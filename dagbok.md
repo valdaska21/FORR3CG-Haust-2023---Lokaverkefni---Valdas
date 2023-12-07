@@ -77,3 +77,45 @@
   
   - **Prenta Aðferð:**
     - `Flugferd::prenta()` - Aðferð sem sýnir flugferðarupplýsingar með `std::cout`.
+
+### Flugferd.cpp
+  - **Smiðir:**
+    - `Flugferd::Flugferd()` - Sjálfgefinn smiður sem byrjar með tómt gildi fyrir `hvert`.
+    - `Flugferd::Flugferd(int id, int fjoldibokad, int hamarksfjoldi, std::string hvert)` - Skilgreindur smiður sem stillir gildi með sérstökum hætti, með kalli á `Ferd` smið.
+  
+  - **Aðgangs- og Stillingaraðferðir:**
+    - `getHvert()`, `setHvert(std::string nytt_hvert)` - Aðgangs- og stillingaraðferðir fyrir `hvert`.
+  
+  - **Prenta Aðferð:**
+    - `Flugferd::prenta()` - Aðferð sem sýnir flugferðarupplýsingar með `std::cout`, birtir `ID`, `fjoldibokad`, `hamarksfjoldi` og `hvert`.
+  
+  Þessi skrá skráir virkni hvers og eins aðgerðar í `Flugferd` klössnum, sem stjórnar flugferðaupplýsingum og hefur sérstaka aðferð til að birta þær.
+
+### Hjolaferd.hpp
+  - **Flokkaskilgreining:**
+    - `Hjolaferd` flokkur búinn til sem erfir frá `Ferd` til að stjórna upplýsingum um hjólaferðir með aukabreytunni `lengdklst`.
+  
+  - **Smiðir:**
+    - `Hjolaferd::Hjolaferd()` - Sjálfgefinn smiður sem byrjar með tómu gildi fyrir `lengdklst`.
+    - `Hjolaferd::Hjolaferd(int id, int fjoldibokad, int hamarksfjoldi, int lengdklst)` - Skilgreindur smiður sem stillir gildi með sérstökum hætti.
+  
+  - **Aðgangs- og Stillingaraðferðir:**
+    - `getLengdklst()`, `setLengdklst(int nytt_lengdklst)` - Aðgangs- og stillingaraðferðir fyrir `lengdklst`.
+  
+  - **Prenta Aðferð:**
+    - `Hjolaferd::prenta()` - Aðferð sem sýnir upplýsingar um hjólaferð með `std::cout`.
+  
+  Hér er lýsing á hlutverki og virkni hverrar aðgerðar í `Hjolaferd` flokknum, sem stýrir upplýsingum um hjólaferðir og hefur sérstaka aðferð til að aðgang að `lengdklst`.
+
+### Hjolaferd.cpp
+  - **Smiðir:**
+    - `Hjolaferd::Hjolaferd()` - Sjálfgefinn smiður sem byrjar með gildið 0 fyrir `lengdklst`.
+    - `Hjolaferd::Hjolaferd(int id, int fjoldibokad, int hamarksfjoldi, int lengdklst)` - Skilgreindur smiður sem stillir gildi með sérstökum hætti, með kalli á `Ferd` smið.
+  
+  - **Aðgangs- og Stillingaraðferðir:**
+    - `getLengdklst()`, `setLengdklst(int nytt_lengdklst)` - Aðgangs- og stillingaraðferðir fyrir `lengdklst`.
+  
+  - **Prenta Aðferð:**
+    - `Hjolaferd::prenta()` - Aðferð sem sýnir upplýsingar um hjólaferð með `std::cout`, sýnir `ID`, `fjoldibokad`, `hamarksfjoldi` og `lengdklst`.
+  
+  Þessi skrá skráir virkni hvers og eins aðgerðar í `Hjolaferd` klössnum sem stýrir upplýsingum um hjólaferðir og hefur sérstaka aðferð til að aðgang að `lengdklst`.
