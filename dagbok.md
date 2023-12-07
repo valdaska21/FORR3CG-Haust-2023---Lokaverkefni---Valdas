@@ -1,7 +1,7 @@
 # Dagbók
 ---
 ## **Dagsetning: 12/7/2023**  
--- **Ferd.hpp**
+**Ferd.hpp**
   - Bjó til Ferd.hpp
   - Bjó til breytur: int id, int fjoldibokad, int hamarksfjoldi. fyrir clasann.
   - Bjó til klasann Ferd
@@ -11,7 +11,7 @@
   - Bjó til operator overload
   - Bjó til virtual~Ferd() destructor
 
--- **Ferd.cpp**
+**Ferd.cpp**
   - Bjó til `Ferd` class til að halda utan um ferðarupplýsingar.
   - Notaði breytur: `id`, `fjoldibokad`, og `hamarksfjoldi` fyrir auðkenni ferðar, bókaða farþega og hámarksfjölda.
   - Að búa til objectið föllin:
