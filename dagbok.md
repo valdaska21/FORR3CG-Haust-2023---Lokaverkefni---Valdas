@@ -63,3 +63,17 @@
   
   - **Prenta Aðferð:**
     - `Batsferd::prenta()` - Aðferð sem sýnir bátsferðarupplýsingar með `std::cout`, þar sem `ID`, `fjoldibokad`, `hamarksfjoldi` og `yfirbyggdur` eru birtar.
+
+### Flugferd.hpp
+  - **Skilgreining á Flokki:**
+    - `Flugferd` flokkur búinn til sem erfir frá `Ferd` til að stjórna flugferðaupplýsingum með aukabreytunni `hvert`.
+  
+  - **Smiðir:**
+    - `Flugferd::Flugferd()` - Sjálfgefinn smiður sem byrjar með sjálfgefnum gildum fyrir `hvert`.
+    - `Flugferd::Flugferd(int id, int fjoldibokad, int hamarksfjoldi, std::string hvert)` - Skilgreindur smiður sem stillir gildi með sérstökum hætti.
+  
+  - **Aðgangs- og Stillingaraðferðir:**
+    - `getHvert()`, `setHvert(std::string nytt_hvert)` - Aðgangs- og stillingaraðferðir fyrir `hvert`.
+  
+  - **Prenta Aðferð:**
+    - `Flugferd::prenta()` - Aðferð sem sýnir flugferðarupplýsingar með `std::cout`.
