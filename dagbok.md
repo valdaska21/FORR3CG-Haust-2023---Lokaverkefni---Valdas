@@ -2,14 +2,23 @@
 ---
 ## **Dagsetning: 12/7/2023**  
 **Ferd.hpp**
-  - Bjó til Ferd.hpp
-  - Bjó til breytur: int id, int fjoldibokad, int hamarksfjoldi. fyrir clasann.
-  - Bjó til klasann Ferd
-  - bó til setter og getter fyrir hverja breytu.
-  - Bjó til Ferd(); og Ferd( með innihaldi );
-  - Bjó til fallið virtual void prenta();
-  - Bjó til operator overload
-  - Bjó til virtual~Ferd() destructor
+  - **Skilgreining á Flokki:**
+    - Smíðaður flokkur `Ferd` til að stjórna upplýsingum um ferðir með einkavirkjum: `id`, `fjoldibokad`, og `hamarksfjoldi`.
+  
+  - **Smiðir:**
+    - `Ferd::Ferd()` - Sjálfgefinn smiður sem byrjar með sjálfgefnum gildum fyrir breyturnar.
+    - `Ferd::Ferd(int id, int fjoldibokad, int hamarksfjoldi)` - Skilgreindur smiður sem stillir sérstök gildi.
+  
+  - **Aðgangs- og Stillingaraðferðir:**
+    - `getId()`, `setId(int nytt_id)` - Aðgangs- og stillingaraðferðir fyrir `id`.
+    - `getFjoldibokad()`, `setFjoldibokad(int nyr_fjoldibokad)` - Aðgangs- og stillingaraðferðir fyrir `fjoldibokad`.
+    - `getHamarksfjoldi()`, `setHamarksfjoldi(int nyr_hamarksfjoldi)` - Aðgangs- og stillingaraðferðir fyrir `hamarksfjoldi`.
+  
+  - **Prenta Aðferð:**
+    - `Ferd::prenta()` - Virtual aðferð sem sýnir upplýsingar um ferð með `std::cout`.
+  
+  - **Yfirhlaðning á Samanburðarvirkjum:**
+    - `operator==`, `operator!=`, `operator<`, `operator>`, `operator<=`, `operator>=` - Skilgreindir til að bera saman `Ferd` hluti eftir ID og     hámarksfjölda.
 
 **Ferd.cpp**
   - Bjó til `Ferd` class til að halda utan um ferðarupplýsingar.
