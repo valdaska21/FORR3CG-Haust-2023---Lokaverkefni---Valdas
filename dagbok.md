@@ -2,19 +2,19 @@
 ---
 ## **Dagsetning: 12/7/2023**  
 ### Ferd.hpp
-  - **Skilgreining á Flokki:**
+  - **Skilgreining á Class:**
     - Smíðaður flokkur `Ferd` til að stjórna upplýsingum um ferðir með einkavirkjum: `id`, `fjoldibokad`, og `hamarksfjoldi`.
   
   - **Smiðir:**
     - `Ferd::Ferd()` - Sjálfgefinn smiður sem byrjar með sjálfgefnum gildum fyrir breyturnar.
     - `Ferd::Ferd(int id, int fjoldibokad, int hamarksfjoldi)` - Skilgreindur smiður sem stillir sérstök gildi.
   
-  - **Aðgangs- og Stillingaraðferðir:**
+  - **Aðgangs- og Stillingarföll:**
     - `getId()`, `setId(int nytt_id)` - Aðgangs- og stillingaraðferðir fyrir `id`.
     - `getFjoldibokad()`, `setFjoldibokad(int nyr_fjoldibokad)` - Aðgangs- og stillingaraðferðir fyrir `fjoldibokad`.
     - `getHamarksfjoldi()`, `setHamarksfjoldi(int nyr_hamarksfjoldi)` - Aðgangs- og stillingaraðferðir fyrir `hamarksfjoldi`.
   
-  - **Prenta Aðferð:**
+  - **Prenta Fall:**
     - `Ferd::prenta()` - Virtual aðferð sem sýnir upplýsingar um ferð með `std::cout`.
   
   - **Yfirhlaðning á Samanburðarvirkjum:**
@@ -40,17 +40,17 @@
     - Gildi eru athugað í smiði og `setFjoldibokad()` aðgerð til að tryggja að bókaðir farþegar fara ekki yfir hámarksfjölda.
 
 ### Batsferd.hpp
-  - **Skilgreining á Flokki:**
+  - **Skilgreining á Class:**
     - `Batsferd` flokkur búinn til sem erfir frá `Ferd` til að stjórna bátsferðaupplýsingum með aukabreytunni `yfirbyggdur`.
   
   - **Smiðir:**
     - `Batsferd::Batsferd()` - Sjálfgefinn smiður sem byrjar með sjálfgefnum gildum fyrir breytuna `yfirbyggdur`.
     - `Batsferd::Batsferd(int id, int fjoldibokad, int hamarksfjoldi, bool yfirbyggdur)` - Skilgreindur smiður sem stillir gildi með sérstökum hætti.
   
-  - **Aðgangs- og Stillingaraðferðir:**
+  - **Aðgangs- og Stillingarföll:**
     - `getYfirbyggdur()`, `setYfirbyggdur(bool nytt_boolvalue)` - Aðgangs- og stillingaraðferðir fyrir `yfirbyggdur`.
   
-  - **Prenta Aðferð:**
+  - **Prenta Fall:**
     - `Batsferd::prenta()` - Aðferð sem sýnir bátsferðarupplýsingar með `std::cout`.
 
 ### Batsferd.cpp
@@ -58,24 +58,24 @@
     - `Batsferd::Batsferd()` - Sjálfgefinn smiður sem byrjar með sjálfgefnum gildum fyrir `yfirbyggdur`.
     - `Batsferd::Batsferd(int id, int fjoldibokad, int hamarksfjoldi, bool yfirbyggdur)` - Skilgreindur smiður sem stillir gildi með sérstökum hætti, með kalli á `Ferd` smið.
   
-  - **Aðgangs- og Stillingaraðferðir:**
+  - **Aðgangs- og Stillingarfall:**
     - `getYfirbyggdur()`, `setYfirbyggdur(bool nytt_boolvalue)` - Aðgangs- og stillingaraðferðir fyrir `yfirbyggdur`.
   
-  - **Prenta Aðferð:**
+  - **Prenta Föll:**
     - `Batsferd::prenta()` - Aðferð sem sýnir bátsferðarupplýsingar með `std::cout`, þar sem `ID`, `fjoldibokad`, `hamarksfjoldi` og `yfirbyggdur` eru birtar.
 
 ### Flugferd.hpp
-  - **Skilgreining á Flokki:**
+  - **Skilgreining á Class:**
     - `Flugferd` flokkur búinn til sem erfir frá `Ferd` til að stjórna flugferðaupplýsingum með aukabreytunni `hvert`.
   
   - **Smiðir:**
     - `Flugferd::Flugferd()` - Sjálfgefinn smiður sem byrjar með sjálfgefnum gildum fyrir `hvert`.
     - `Flugferd::Flugferd(int id, int fjoldibokad, int hamarksfjoldi, std::string hvert)` - Skilgreindur smiður sem stillir gildi með sérstökum hætti.
   
-  - **Aðgangs- og Stillingaraðferðir:**
+  - **Aðgangs- og Stillingarföll:**
     - `getHvert()`, `setHvert(std::string nytt_hvert)` - Aðgangs- og stillingaraðferðir fyrir `hvert`.
   
-  - **Prenta Aðferð:**
+  - **Prenta Fall:**
     - `Flugferd::prenta()` - Aðferð sem sýnir flugferðarupplýsingar með `std::cout`.
 
 ### Flugferd.cpp
@@ -83,26 +83,26 @@
     - `Flugferd::Flugferd()` - Sjálfgefinn smiður sem byrjar með tómt gildi fyrir `hvert`.
     - `Flugferd::Flugferd(int id, int fjoldibokad, int hamarksfjoldi, std::string hvert)` - Skilgreindur smiður sem stillir gildi með sérstökum hætti, með kalli á `Ferd` smið.
   
-  - **Aðgangs- og Stillingaraðferðir:**
+  - **Aðgangs- og Stillingarföll:**
     - `getHvert()`, `setHvert(std::string nytt_hvert)` - Aðgangs- og stillingaraðferðir fyrir `hvert`.
   
-  - **Prenta Aðferð:**
+  - **Prenta Fall:**
     - `Flugferd::prenta()` - Aðferð sem sýnir flugferðarupplýsingar með `std::cout`, birtir `ID`, `fjoldibokad`, `hamarksfjoldi` og `hvert`.
   
   Þessi skrá skráir virkni hvers og eins aðgerðar í `Flugferd` klössnum, sem stjórnar flugferðaupplýsingum og hefur sérstaka aðferð til að birta þær.
 
 ### Hjolaferd.hpp
-  - **Flokkaskilgreining:**
+  - **Classaskilgreining:**
     - `Hjolaferd` flokkur búinn til sem erfir frá `Ferd` til að stjórna upplýsingum um hjólaferðir með aukabreytunni `lengdklst`.
   
   - **Smiðir:**
     - `Hjolaferd::Hjolaferd()` - Sjálfgefinn smiður sem byrjar með tómu gildi fyrir `lengdklst`.
     - `Hjolaferd::Hjolaferd(int id, int fjoldibokad, int hamarksfjoldi, int lengdklst)` - Skilgreindur smiður sem stillir gildi með sérstökum hætti.
   
-  - **Aðgangs- og Stillingaraðferðir:**
+  - **Aðgangs- og Stillingarföll:**
     - `getLengdklst()`, `setLengdklst(int nytt_lengdklst)` - Aðgangs- og stillingaraðferðir fyrir `lengdklst`.
   
-  - **Prenta Aðferð:**
+  - **Prenta fall:**
     - `Hjolaferd::prenta()` - Aðferð sem sýnir upplýsingar um hjólaferð með `std::cout`.
   
   Hér er lýsing á hlutverki og virkni hverrar aðgerðar í `Hjolaferd` flokknum, sem stýrir upplýsingum um hjólaferðir og hefur sérstaka aðferð til að aðgang að `lengdklst`.
@@ -112,10 +112,10 @@
     - `Hjolaferd::Hjolaferd()` - Sjálfgefinn smiður sem byrjar með gildið 0 fyrir `lengdklst`.
     - `Hjolaferd::Hjolaferd(int id, int fjoldibokad, int hamarksfjoldi, int lengdklst)` - Skilgreindur smiður sem stillir gildi með sérstökum hætti, með erfi á `Ferd` smið.
   
-  - **Aðgangs- og Stillingaraðferðir:**
+  - **Aðgangs- og Stillingarfall:**
     - `getLengdklst()`, `setLengdklst(int nytt_lengdklst)` - Aðgangs- og stillingaraðferðir fyrir `lengdklst`.
   
-  - **Prenta Aðferð:**
+  - **Prenta Fall:**
     - `Hjolaferd::prenta()` - Aðferð sem sýnir upplýsingar um hjólaferð með `std::cout`, sýnir `ID`, `fjoldibokad`, `hamarksfjoldi` og `lengdklst`.
   
   Þessi skrá skráir virkni hvers og eins aðgerðar í `Hjolaferd` klössnum sem stýrir upplýsingum um hjólaferðir og hefur sérstaka aðferð til að aðgang að `lengdklst`.
