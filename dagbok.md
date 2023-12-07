@@ -1,7 +1,7 @@
 # Dagbók
 ---
 ## **Dagsetning: 12/7/2023**  
-**Ferd.hpp**
+### Ferd.hpp
   - **Skilgreining á Flokki:**
     - Smíðaður flokkur `Ferd` til að stjórna upplýsingum um ferðir með einkavirkjum: `id`, `fjoldibokad`, og `hamarksfjoldi`.
   
@@ -22,7 +22,7 @@
   - **Destructor**
     - `virtual~Ferd() {}`
 
-**Ferd.cpp**
+### Ferd.cpp
   - Bjó til `Ferd` class til að halda utan um ferðarupplýsingar.
   - Notaði breytur: `id`, `fjoldibokad`, og `hamarksfjoldi` fyrir auðkenni ferðar, bókaða farþega og hámarksfjölda.
   - Að búa til objectið föllin:
@@ -39,7 +39,7 @@
   - Takmörkunareglur:
     - Gildi eru athugað í smiði og `setFjoldibokad()` aðgerð til að tryggja að bókaðir farþegar fara ekki yfir hámarksfjölda.
 
-**Batsferd.hpp**
+### Batsferd.hpp
   - **Skilgreining á Flokki:**
     - `Batsferd` flokkur búinn til sem erfir frá `Ferd` til að stjórna bátsferðaupplýsingum með aukabreytunni `yfirbyggdur`.
   
