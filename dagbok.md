@@ -130,18 +130,18 @@
 - **Safnaskilgreining:**
   - `FerdNode` safn búið til til að halda utan um `Ferd` hluti og tengingar milli þeirra.
 
-- **Gagnatakmark:**
+- **Breytur:**
   - `ferdin` - Pointer á `Ferd` hlut sem er geymdur í hverjum hnúti.
   - `next` - Pointer á næsta hnút í safninu.
 
 - **Smiður:**
   - `FerdNode::FerdNode(Ferd* ferdin)` - Skilgreindur smiður sem stillir gildi fyrir `ferdin` og `next`.
 
-- **Afvirkni Smiður:**
+- **Destructor Smiður:**
   - `FerdNode::~FerdNode()` - Smiður sem eyðir `ferdin` hlutnum sem tengist þessum hnút í minni.
 
 ### Ferdlinkedlist.hpp  
-- **Klösuskilgreining:**
+- **Class skilgreining:**
   - `Ferdlinkedlist` klösin búið til til að stjórna tengdum listum af mismunandi ferðum (`Batsferd`, `Flugferd`, `Hjolaferd`) í safninu.
 
 - **Gagnataka:**
