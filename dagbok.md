@@ -140,3 +140,22 @@
 - **Afvirkni Smiður:**
   - `FerdNode::~FerdNode()` - Smiður sem eyðir `ferdin` hlutnum sem tengist þessum hnút í minni.
 
+### Ferdlinkedlist.hpp  
+- **Klösuskilgreining:**
+  - `Ferdlinkedlist` klösin búið til til að stjórna tengdum listum af mismunandi ferðum (`Batsferd`, `Flugferd`, `Hjolaferd`) í safninu.
+
+- **Gagnataka:**
+  - `head` - Bendir á fyrsta hnútinn í tengda lista.
+
+- **Aðgerðir:**
+  - `Ferdlinkedlist::Ferdlinkedlist()` - Sjálfgefinn smiður sem byrjar með tómum lista.
+  - `skraRadad(Ferd* ferdin)` - Aðferð til að skrá ferð í lista raðað.
+  - `skraBatsferd(int id, int fjoldibokad, int hamarksfjoldi, bool yfirbyggdur)` - Aðferð til að skrá nýja bátsferð í lista.
+  - `skraFlugferd(int id, int fjoldibokad, int hamarksfjoldi, std::string hvert)` - Aðferð til að skrá nýja flugferð í lista.
+  - `skraHjolaferd(int id, int fjoldibokad, int hamarksfjoldi, int lengdklst)` - Aðferð til að skrá nýja hjólaferð í lista.
+  - `prentaAllt()` - Aðferð til að prenta allar ferðir í listanum.
+  - `breytaFjoldibokad(int id, int nytt_fjoldibokad)` - Aðferð til að breyta fjölda bókaða farþega í tiltekinni ferð.
+  - `eydaAkvednum(int id)` - Aðferð til að eyða tiltekina ferð út úr listanum.
+  - `skodaAkvedinn(int id)` - Aðferð til að skoða akveðinna ferð.
+  - `~Ferdlinkedlist()` - Aðferð til að eyða öllum hnútum í listanum þegar klósin er eytt.
+
