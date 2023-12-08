@@ -14,4 +14,5 @@ class Flugferd : public Ferd {
         std::string getHvert();
         void setHvert(std::string nytt_hvert);
         void prenta();
+        std::string getType();
 };
