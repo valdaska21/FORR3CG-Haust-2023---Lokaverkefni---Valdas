@@ -16,7 +16,7 @@ class Ferd {
         int getFjoldibokad();
         void setFjoldibokad(int nyr_fjoldibokad);
         int getHamarksfjoldi();
-        int setHamarksfjoldi(int nyr_hamarksfjoldi);
+        void setHamarksfjoldi(int nyr_hamarksfjoldi);
         virtual void prenta();
         virtual std::string getType();
         bool operator==(Ferd& hitt);
