@@ -123,5 +123,5 @@
 ---
 ## Dagsetning: 12/8/2023  
 - bý til main.cpp file í möppunni Kodinn lokaskil
-- Copya öll filein úr möppuni kóðinn hlutaskil yfir í kóðinn lokaskil
+- Uploadaði skjölin sem voru í möppuni hlutaskil, líka í möppuna lokaskil
 - 
