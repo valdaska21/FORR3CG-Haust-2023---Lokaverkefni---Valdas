@@ -50,6 +50,10 @@ void Ferd::prenta() {
     std::cout << "Ferð| ID: " << this->id << ", Fjöldi Bókað: " << this->fjoldibokad << ", Hámarksfjoldi: " << this->hamarksfjoldi << std::endl;
 }
 
+std::string Ferd::getType() {
+    return "Ferð";
+}
+
 bool Ferd::operator==(Ferd& hitt) {
     return this->id == hitt.getId() && this->hamarksfjoldi == hitt.getHamarksfjoldi();
 }
