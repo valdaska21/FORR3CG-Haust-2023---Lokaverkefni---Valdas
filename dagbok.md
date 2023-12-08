@@ -92,7 +92,7 @@
   Þessi skrá skráir virkni hvers og eins aðgerðar í `Flugferd` klössnum, sem stjórnar flugferðaupplýsingum og hefur sérstaka aðferð til að birta þær.
 
 ### Hjolaferd.hpp
-  - **Classaskilgreining:**
+  - **Classa skilgreining:**
     - `Hjolaferd` flokkur búinn til sem erfir frá `Ferd` til að stjórna upplýsingum um hjólaferðir með aukabreytunni `lengdklst`.
   
   - **Smiðir:**
@@ -147,7 +147,7 @@
 - **Gagnataka:**
   - `head` - Bendir á fyrsta hnútinn í tengda lista.
 
-- **Aðgerðir:**
+- **Föll:**
   - `Ferdlinkedlist::Ferdlinkedlist()` - Sjálfgefinn smiður sem byrjar með tómum lista.
   - `skraRadad(Ferd* ferdin)` - Aðferð til að skrá ferð í lista raðað.
   - `skraBatsferd(int id, int fjoldibokad, int hamarksfjoldi, bool yfirbyggdur)` - Aðferð til að skrá nýja bátsferð í lista.
@@ -163,7 +163,7 @@
 - **Klósuskilgreiningar:**
   - `Ferdlinkedlist` klósin er skilgreindur til að stjórna tengdum lista af ferðum, notaður til að bóka flugferðir, hjólaferðir og bátsferðir.
 
-- **Aðgerðir:**
+- **Föll:**
   - `Ferdlinkedlist::Ferdlinkedlist()` - Sjálfgefinn smiður sem byrjar lista með engum hnút.
   - `skraRadad(Ferd* ferdin)` - Aðferð til að skrá ferðir í röð eftir hámarksfjölda ferða sem bókast.
   - `skraBatsferd(int id, int fjoldibokad, int hamarksfjoldi, bool yfirbyggdur)` - Skráir nýja bátsferð í listann.
