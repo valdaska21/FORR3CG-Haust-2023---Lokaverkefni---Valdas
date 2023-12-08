@@ -46,6 +46,39 @@ void Ferdlinkedlist::prentaAllt() {
     }
 }
 
+void Ferdlinkedlist::prentaAlltBferd() {
+    FerdNode* current = this->head;
+    while(current) {
+        if(current->ferdin->getType() == "Bátsferð") {
+            current->ferdin->prenta();
+        }
+        current = current->next;
+    }
+}
+
+void Ferdlinkedlist::prentaAlltFferd() {
+    FerdNode* current = this->head;
+    while(current) {
+        if(current->ferdin->getType() == "Flugferð") {
+            current->ferdin->prenta();
+        }
+        current = current->next;
+    }
+}
+
+
+void Ferdlinkedlist::prentaAlltHferd() {
+    FerdNode* current = this->head;
+    while(current) {
+        if(current->ferdin->getType() == "Hjólaferð") {
+            current->ferdin->prenta();
+        }
+        current = current->next;
+    }
+}
+
+
+
 void Ferdlinkedlist::breytaFjoldibokad(int id, int nytt_fjoldibokad) {
     FerdNode* current = this->head;
     while(current) {
