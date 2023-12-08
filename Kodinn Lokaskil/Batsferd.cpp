@@ -17,10 +17,16 @@ void Batsferd::setYfirbyggdur(bool nytt_boolvalue){
 }
 
 void Batsferd::prenta(){
+    std::string yfirbyggdurtext;
+    if(this->yfirbyggdur == 1){
+        yfirbyggdurtext = "Já";
+    } else {
+        yfirbyggdurtext = "Nei";
+    }
     std::cout << "Bátsferð| ID: " << this->getId() 
               << ", Fjöldi Bókað: " << this->getFjoldibokad() 
               << ", Hámarksfjoldi: " << this->getHamarksfjoldi() 
-              << ", Yfirbyggður: " << this->yfirbyggdur << std::endl;
+              << ", Yfirbyggður: " << yfirbyggdurtext << std::endl;
 }
 
 std::string Batsferd::getType() {
