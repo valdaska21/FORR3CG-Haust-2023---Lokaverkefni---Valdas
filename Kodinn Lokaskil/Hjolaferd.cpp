@@ -19,3 +19,7 @@ void Hjolaferd::setLengdklst(int nytt_lengdklst) {
 void Hjolaferd::prenta() {
     std::cout << "Hjolaferð| ID: " << this->getId() << ", Fjöldi Bókað: " << this->getFjoldibokad() << ", Hámarksfjoldi: " << this->getHamarksfjoldi() << ", Tími í Klst.: " << this->lengdklst << std::endl;
 }
+
+std::string Hjolaferd::getType() {
+    return "Hjólaferð";
+}
