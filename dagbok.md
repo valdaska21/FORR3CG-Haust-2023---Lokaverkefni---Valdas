@@ -121,5 +121,5 @@
   Þessi skrá skráir virkni hvers og eins aðgerðar í `Hjolaferd` klössnum sem stýrir upplýsingum um hjólaferðir og hefur sérstaka aðferð til að aðgang að `lengdklst`.
 
 ---
-## Dagsetning:12/8/2023  
+## Dagsetning: 12/8/2023  
 - bý til main.cpp file í möppunni Kodinn lokaskil
