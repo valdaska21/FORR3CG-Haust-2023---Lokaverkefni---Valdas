@@ -1,6 +1,6 @@
 # Dagbók
 ---
-## **Dagsetning: 12/7/2023**  
+## Dagsetning: 12/7/2023   
 ### Ferd.hpp
   - **Skilgreining á Class:**
     - Smíðaður flokkur `Ferd` til að stjórna upplýsingum um ferðir með einkavirkjum: `id`, `fjoldibokad`, og `hamarksfjoldi`.
@@ -119,3 +119,7 @@
     - `Hjolaferd::prenta()` - Aðferð sem sýnir upplýsingar um hjólaferð með `std::cout`, sýnir `ID`, `fjoldibokad`, `hamarksfjoldi` og `lengdklst`.
   
   Þessi skrá skráir virkni hvers og eins aðgerðar í `Hjolaferd` klössnum sem stýrir upplýsingum um hjólaferðir og hefur sérstaka aðferð til að aðgang að `lengdklst`.
+
+---
+## Dagsetning:12/8/2023  
+- bý til main.cpp file í möppunni Kodinn lokaskil
