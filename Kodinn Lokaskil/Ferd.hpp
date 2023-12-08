@@ -18,6 +18,7 @@ class Ferd {
         int getHamarksfjoldi();
         int setHamarksfjoldi(int nyr_hamarksfjoldi);
         virtual void prenta();
+        virtual std::string getType();
         bool operator==(Ferd& hitt);
         bool operator!=(Ferd& hitt);
         bool operator<(Ferd& hitt);
