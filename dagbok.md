@@ -162,9 +162,9 @@
   - `skraFlugferd(int id, int fjoldibokad, int hamarksfjoldi, std::string hvert)` - Aðferð til að skrá nýja flugferð í lista.
   - `skraHjolaferd(int id, int fjoldibokad, int hamarksfjoldi, int lengdklst)` - Aðferð til að skrá nýja hjólaferð í lista.
   - `prentaAllt()` - Aðferð til að prenta allar ferðir í listanum.
-  - `void prentaAlltBferd();`
-  - `void prentaAlltFferd();`
-  - `void prentaAlltHferd();`
+  - `prentaAlltBferd();`
+  - `prentaAlltFferd();`
+  - `prentaAlltHferd();`
   - `breytaFjoldibokad(int id, int nytt_fjoldibokad)` - Aðferð til að breyta fjölda bókaða farþega í tiltekinni ferð.
   - `eydaAkvednum(int id)` - Aðferð til að eyða tiltekina ferð út úr listanum.
   - `skodaAkvedinn(int id)` - Aðferð til að skoða akveðinna ferð.
@@ -181,9 +181,9 @@
   - `skraFlugferd(int id, int fjoldibokad, int hamarksfjoldi, std::string hvert)` - Skráir nýja flugferð í listann.
   - `skraHjolaferd(int id, int fjoldibokad, int hamarksfjoldi, int lengdklst)` - Skráir nýja hjólaferð í listann.
   - `prentaAllt()` - Prentar allar ferðirnar í lista.
-  - `void prentaAlltBferd();`
-  - `void prentaAlltFferd();`
-  - `void prentaAlltHferd();`
+  - `prentaAlltBferd();`
+  - `prentaAlltFferd();`
+  - `prentaAlltHferd();`
   - `breytaFjoldibokad(int id, int nytt_fjoldibokad)` - Breytir fjölda bókaðra farþega í ákveðinni ferð.
   - `eydaAkvednum(int id)` - Eyðir tiltekinni ferð úr listanum.
   - `skodaAkvedinn(int id)` - Skoðar og prentar ákveðna ferð ef hún er í listanum.
