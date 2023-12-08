@@ -13,7 +13,7 @@ std::string Flugferd::getHvert(){
 }
 
 void Flugferd::setHvert(std::string nytt_hvert){
-    this->hvert = hvert;
+    this->hvert = nytt_hvert;
 }
 
 void Flugferd::prenta(){
