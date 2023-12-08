@@ -13,6 +13,7 @@
     - `getId()`, `setId(int nytt_id)` - Aðgangs- og stillingaraðferðir fyrir `id`.
     - `getFjoldibokad()`, `setFjoldibokad(int nyr_fjoldibokad)` - Aðgangs- og stillingaraðferðir fyrir `fjoldibokad`.
     - `getHamarksfjoldi()`, `setHamarksfjoldi(int nyr_hamarksfjoldi)` - Aðgangs- og stillingaraðferðir fyrir `hamarksfjoldi`.
+    - `getType()` 
   
   - **Prenta Fall:**
     - `Ferd::prenta()` - Virtual aðferð sem sýnir upplýsingar um ferð með `std::cout`.
@@ -32,6 +33,7 @@
     - `getId()`, `setId(int nytt_id)` - Sækja og breyta `id`.
     - `getFjoldibokad()`, `setFjoldibokad(int nyr_fjoldibokad)` - Sækja og breyta `fjoldibokad` með takmörkun til að hindra ofbókun.
     - `getHamarksfjoldi()`, `setHamarksfjoldi(int nyr_hamarksfjoldi)` - Sækja og breyta `hamarksfjoldi`.
+    - `getType()` 
   - Prenta fallið:
     - `Ferd::prenta()` - Sýnir ferðarupplýsingar (`id`, `fjoldibokad`, `hamarksfjoldi`) með `std::cout`.
   - Samanburðarvirkjar:
@@ -49,6 +51,7 @@
   
   - **Aðgangs- og Stillingarföll:**
     - `getYfirbyggdur()`, `setYfirbyggdur(bool nytt_boolvalue)` - Aðgangs- og stillingaraðferðir fyrir `yfirbyggdur`.
+    - `getType()` 
   
   - **Prenta Fall:**
     - `Batsferd::prenta()` - Aðferð sem sýnir bátsferðarupplýsingar með `std::cout`.
@@ -60,6 +63,7 @@
   
   - **Aðgangs- og Stillingarfall:**
     - `getYfirbyggdur()`, `setYfirbyggdur(bool nytt_boolvalue)` - Aðgangs- og stillingaraðferðir fyrir `yfirbyggdur`.
+    - `getType()` 
   
   - **Prenta Föll:**
     - `Batsferd::prenta()` - Aðferð sem sýnir bátsferðarupplýsingar með `std::cout`, þar sem `ID`, `fjoldibokad`, `hamarksfjoldi` og `yfirbyggdur` eru birtar.
@@ -74,6 +78,7 @@
   
   - **Aðgangs- og Stillingarföll:**
     - `getHvert()`, `setHvert(std::string nytt_hvert)` - Aðgangs- og stillingaraðferðir fyrir `hvert`.
+    - `getType()` 
   
   - **Prenta Fall:**
     - `Flugferd::prenta()` - Aðferð sem sýnir flugferðarupplýsingar með `std::cout`.
@@ -85,6 +90,7 @@
   
   - **Aðgangs- og Stillingarföll:**
     - `getHvert()`, `setHvert(std::string nytt_hvert)` - Aðgangs- og stillingaraðferðir fyrir `hvert`.
+    - `getType()` 
   
   - **Prenta Fall:**
     - `Flugferd::prenta()` - Aðferð sem sýnir flugferðarupplýsingar með `std::cout`, birtir `ID`, `fjoldibokad`, `hamarksfjoldi` og `hvert`.
@@ -101,6 +107,7 @@
   
   - **Aðgangs- og Stillingarföll:**
     - `getLengdklst()`, `setLengdklst(int nytt_lengdklst)` - Aðgangs- og stillingaraðferðir fyrir `lengdklst`.
+    - `getType()` 
   
   - **Prenta fall:**
     - `Hjolaferd::prenta()` - Aðferð sem sýnir upplýsingar um hjólaferð með `std::cout`.
@@ -114,6 +121,7 @@
   
   - **Aðgangs- og Stillingarfall:**
     - `getLengdklst()`, `setLengdklst(int nytt_lengdklst)` - Aðgangs- og stillingaraðferðir fyrir `lengdklst`.
+    - `getType()` 
   
   - **Prenta Fall:**
     - `Hjolaferd::prenta()` - Aðferð sem sýnir upplýsingar um hjólaferð með `std::cout`, sýnir `ID`, `fjoldibokad`, `hamarksfjoldi` og `lengdklst`.
@@ -154,6 +162,9 @@
   - `skraFlugferd(int id, int fjoldibokad, int hamarksfjoldi, std::string hvert)` - Aðferð til að skrá nýja flugferð í lista.
   - `skraHjolaferd(int id, int fjoldibokad, int hamarksfjoldi, int lengdklst)` - Aðferð til að skrá nýja hjólaferð í lista.
   - `prentaAllt()` - Aðferð til að prenta allar ferðir í listanum.
+  - `void prentaAlltBferd();`
+  - `void prentaAlltFferd();`
+  - `void prentaAlltHferd();`
   - `breytaFjoldibokad(int id, int nytt_fjoldibokad)` - Aðferð til að breyta fjölda bókaða farþega í tiltekinni ferð.
   - `eydaAkvednum(int id)` - Aðferð til að eyða tiltekina ferð út úr listanum.
   - `skodaAkvedinn(int id)` - Aðferð til að skoða akveðinna ferð.
@@ -170,6 +181,9 @@
   - `skraFlugferd(int id, int fjoldibokad, int hamarksfjoldi, std::string hvert)` - Skráir nýja flugferð í listann.
   - `skraHjolaferd(int id, int fjoldibokad, int hamarksfjoldi, int lengdklst)` - Skráir nýja hjólaferð í listann.
   - `prentaAllt()` - Prentar allar ferðirnar í lista.
+  - `void prentaAlltBferd();`
+  - `void prentaAlltFferd();`
+  - `void prentaAlltHferd();`
   - `breytaFjoldibokad(int id, int nytt_fjoldibokad)` - Breytir fjölda bókaðra farþega í ákveðinni ferð.
   - `eydaAkvednum(int id)` - Eyðir tiltekinni ferð úr listanum.
   - `skodaAkvedinn(int id)` - Skoðar og prentar ákveðna ferð ef hún er í listanum.
