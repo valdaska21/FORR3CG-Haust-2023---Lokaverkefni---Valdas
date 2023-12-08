@@ -17,6 +17,9 @@ class Ferdlinkedlist {
         void skraFlugferd(int id, int fjoldibokad, int hamarksfjoldi, std::string hvert);
         void skraHjolaferd(int id, int fjoldibokad, int hamarksfjoldi, int lengdklst);
         void prentaAllt();
+        void prentaAlltBferd();
+        void prentaAlltFferd();
+        void prentaAlltHferd();
         void breytaFjoldibokad(int id, int nytt_fjoldibokad);
         void eydaAkvednum(int id);
         int skodaAkvedinn(int id);
