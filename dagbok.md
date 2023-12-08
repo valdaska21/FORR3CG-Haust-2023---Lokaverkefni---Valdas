@@ -124,6 +124,7 @@
 ## Dagsetning: 12/8/2023  
 - bý til main.cpp file í möppunni Kodinn lokaskil
 - Uploadaði skjölin sem voru í möppuni hlutaskil, líka í möppuna lokaskil
+- Bjó til filein: FerdNode.hpp, Ferdlinkedlist.hpp, Ferdlinkedlist.cpp
 
 ### FerdNode.hpp  
 - **Safnaskilgreining:**
