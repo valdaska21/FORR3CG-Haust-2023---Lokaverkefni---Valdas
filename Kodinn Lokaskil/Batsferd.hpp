@@ -14,4 +14,5 @@ class Batsferd : public Ferd {
         bool getYfirbyggdur();
         void setYfirbyggdur(bool nytt_boolvalue);
         void prenta();
+        std::string getType();
 };
