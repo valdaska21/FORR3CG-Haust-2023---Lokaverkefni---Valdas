@@ -19,9 +19,10 @@
     - `Ferd::prenta()` - Virtual aðferð sem sýnir upplýsingar um ferð með `std::cout`.
   
   - **Yfirhlaðning á Samanburðarvirkjum:**
-    - `operator==`, `operator!=`, `operator<`, `operator>`, `operator<=`, `operator>=` - Skilgreindir til að bera saman `Ferd` hluti eftir ID og     hámarksfjölda.
+    - `operator==`, `operator!=`, `operator<`, `operator>`, `operator<=`, `operator>=`,`operator<<` - Skilgreindir til að bera saman `Ferd` hluti eftir ID og     hámarksfjölda.
   - **Destructor**
     - `virtual~Ferd() {}`
+  - `operator<<`
 
 ### Ferd.cpp
   - Bjó til `Ferd` class til að halda utan um ferðarupplýsingar.
@@ -40,6 +41,7 @@
     - `operator==`, `operator!=`, `operator<`, `operator>`, `operator<=`, `operator>=` - Gerir samanburð á ferðum eftir `id` og `hamarksfjoldi`.
   - Takmörkunareglur:
     - Gildi eru athugað í smiði og `setFjoldibokad()` aðgerð til að tryggja að bókaðir farþegar fara ekki yfir hámarksfjölda.
+  - `operator<<`
 
 ### Batsferd.hpp
   - **Skilgreining á Class:**
@@ -55,6 +57,7 @@
   
   - **Prenta Fall:**
     - `Batsferd::prenta()` - Aðferð sem sýnir bátsferðarupplýsingar með `std::cout`.
+  - `operator<<`
 
 ### Batsferd.cpp
   - **Smiðir:**
@@ -67,6 +70,7 @@
   
   - **Prenta Föll:**
     - `Batsferd::prenta()` - Aðferð sem sýnir bátsferðarupplýsingar með `std::cout`, þar sem `ID`, `fjoldibokad`, `hamarksfjoldi` og `yfirbyggdur` eru birtar.
+  - `operator<<`
 
 ### Flugferd.hpp
   - **Skilgreining á Class:**
@@ -82,6 +86,7 @@
   
   - **Prenta Fall:**
     - `Flugferd::prenta()` - Aðferð sem sýnir flugferðarupplýsingar með `std::cout`.
+  - `operator<<`
 
 ### Flugferd.cpp
   - **Smiðir:**
@@ -94,6 +99,7 @@
   
   - **Prenta Fall:**
     - `Flugferd::prenta()` - Aðferð sem sýnir flugferðarupplýsingar með `std::cout`, birtir `ID`, `fjoldibokad`, `hamarksfjoldi` og `hvert`.
+  - `operator<<`
   
   Þessi skrá skráir virkni hvers og eins aðgerðar í `Flugferd` klössnum, sem stjórnar flugferðaupplýsingum og hefur sérstaka aðferð til að birta þær.
 
@@ -111,6 +117,7 @@
   
   - **Prenta fall:**
     - `Hjolaferd::prenta()` - Aðferð sem sýnir upplýsingar um hjólaferð með `std::cout`.
+  - `operator<<`
   
   Hér er lýsing á hlutverki og virkni hverrar aðgerðar í `Hjolaferd` flokknum, sem stýrir upplýsingum um hjólaferðir og hefur sérstaka aðferð til að aðgang að `lengdklst`.
 
@@ -125,6 +132,7 @@
   
   - **Prenta Fall:**
     - `Hjolaferd::prenta()` - Aðferð sem sýnir upplýsingar um hjólaferð með `std::cout`, sýnir `ID`, `fjoldibokad`, `hamarksfjoldi` og `lengdklst`.
+  - `operator<<`
   
   Þessi skrá skráir virkni hvers og eins aðgerðar í `Hjolaferd` klössnum sem stýrir upplýsingum um hjólaferðir og hefur sérstaka aðferð til að aðgang að `lengdklst`.
 
