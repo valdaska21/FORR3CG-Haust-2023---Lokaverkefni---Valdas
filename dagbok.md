@@ -28,7 +28,7 @@
   - Notaði breytur: `id`, `fjoldibokad`, og `hamarksfjoldi` fyrir auðkenni ferðar, bókaða farþega og hámarksfjölda.
   - Að búa til objectið föllin:
     - `Ferd::Ferd()` - Byrjunargildi fyrir `id`, `fjoldibokad`, og `hamarksfjoldi`.
-    - `Ferd::Ferd(int id, int fjoldibokad, int hamarksfjoldi)` - Stillir gildi með skilyrði til að hindra ofbókun.
+    - `Ferd::Ferd(int id, int fjoldibokad, int hamarksfjoldi)`
   - Aðgangs- og stillingarföll:
     - `getId()`, `setId(int nytt_id)` - Sækja og breyta `id`.
     - `getFjoldibokad()`, `setFjoldibokad(int nyr_fjoldibokad)` - Sækja og breyta `fjoldibokad` með takmörkun til að hindra ofbókun.
