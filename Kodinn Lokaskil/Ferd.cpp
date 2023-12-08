@@ -7,14 +7,9 @@ Ferd::Ferd() {
 }
 
 Ferd::Ferd(int id, int fjoldibokad, int hamarksfjoldi) {
-    if (fjoldibokad > hamarksfjoldi){
-        std::cout << "Ekki er hægt að bóka fleirum heldur en hámarksfjöldinn leyfir!" << std::endl;
-    } else {
-        this->id = id;
-        this->fjoldibokad = fjoldibokad;
-        this->hamarksfjoldi = hamarksfjoldi;
-    }
-    
+    this->id = id;
+    this->fjoldibokad = fjoldibokad;
+    this->hamarksfjoldi = hamarksfjoldi;
 }
 
 int Ferd::getId() {
@@ -30,12 +25,7 @@ int Ferd::getFjoldibokad() {
 }
 
 void Ferd::setFjoldibokad(int nyr_fjoldibokad) {
-    if (nyr_fjoldibokad > hamarksfjoldi){
-        std::cout << "Ekki er hægt að bóka fleirum heldur en hámarksfjöldinn leyfir!" << std::endl;
-    } else {
-       this->fjoldibokad = nyr_fjoldibokad; 
-    }
-    
+       this->fjoldibokad = nyr_fjoldibokad;
 }
 
 int Ferd::getHamarksfjoldi() {
