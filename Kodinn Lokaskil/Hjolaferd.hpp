@@ -14,4 +14,5 @@ class Hjolaferd : public Ferd {
         int getLengdklst();
         void setLengdklst(int nytt_lengdklst);
         void prenta();
+        std::string getType();
 };
