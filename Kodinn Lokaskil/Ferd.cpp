@@ -42,7 +42,7 @@ int Ferd::getHamarksfjoldi() {
     return this->hamarksfjoldi;
 }
 
-int Ferd::setHamarksfjoldi(int nyr_hamarksfjoldi) {
+void Ferd::setHamarksfjoldi(int nyr_hamarksfjoldi) {
     this->hamarksfjoldi = nyr_hamarksfjoldi;
 }
 
