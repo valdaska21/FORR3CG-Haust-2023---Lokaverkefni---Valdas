@@ -19,3 +19,7 @@ void Flugferd::setHvert(std::string nytt_hvert){
 void Flugferd::prenta(){
     std::cout << "Flugferð| ID: " << this->getId() << ", Fjöldi Bókað: " << this->getFjoldibokad() << ", Hámarksfjoldi: " << this->getHamarksfjoldi() << ", Hvert: " << this->hvert << std::endl;
 }
+
+std::string Flugferd::getType() {
+    return "Flugferð";
+}
