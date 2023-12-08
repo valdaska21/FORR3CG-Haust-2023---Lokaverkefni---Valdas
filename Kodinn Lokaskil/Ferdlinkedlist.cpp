@@ -83,8 +83,12 @@ void Ferdlinkedlist::breytaFjoldibokad(int id, int nytt_fjoldibokad) {
     FerdNode* current = this->head;
     while(current) {
         if(current->ferdin->getId() == id) {
-            current->ferdin->setFjoldibokad(nytt_fjoldibokad);
-            return;
+            if(current->ferdin->getHamarksfjoldi() < nytt_fjoldibokad) {
+                std::cout << "Ekki er hægt að bóka fleirum heldur en hámarksfjöldinn leyfir!" << std::endl;
+            } else {
+                current->ferdin->setFjoldibokad(nytt_fjoldibokad);
+                return;
+            }
         }
         current = current->next;
     }
@@ -116,7 +120,7 @@ int Ferdlinkedlist::skodaAkvedinn(int id) {
         FerdNode* current = this->head;
         while(current) { // while(current != nullptr)
             if(current->ferdin->getId() == id) {
-                std::cout << current->ferdin << std::endl;
+                current->ferdin->prenta();
             }
             current = current->next;
         }
