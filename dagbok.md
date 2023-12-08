@@ -159,3 +159,18 @@
   - `skodaAkvedinn(int id)` - Aðferð til að skoða akveðinna ferð.
   - `~Ferdlinkedlist()` - Aðferð til að eyða öllum hnútum í listanum þegar klósin er eytt.
 
+### Ferdlinkedlist.cpp
+- **Klósuskilgreiningar:**
+  - `Ferdlinkedlist` klósin er skilgreindur til að stjórna tengdum lista af ferðum, notaður til að bóka flugferðir, hjólaferðir og bátsferðir.
+
+- **Aðgerðir:**
+  - `Ferdlinkedlist::Ferdlinkedlist()` - Sjálfgefinn smiður sem byrjar lista með engum hnút.
+  - `skraRadad(Ferd* ferdin)` - Aðferð til að skrá ferðir í röð eftir hámarksfjölda ferða sem bókast.
+  - `skraBatsferd(int id, int fjoldibokad, int hamarksfjoldi, bool yfirbyggdur)` - Skráir nýja bátsferð í listann.
+  - `skraFlugferd(int id, int fjoldibokad, int hamarksfjoldi, std::string hvert)` - Skráir nýja flugferð í listann.
+  - `skraHjolaferd(int id, int fjoldibokad, int hamarksfjoldi, int lengdklst)` - Skráir nýja hjólaferð í listann.
+  - `prentaAllt()` - Prentar allar ferðirnar í lista.
+  - `breytaFjoldibokad(int id, int nytt_fjoldibokad)` - Breytir fjölda bókaðra farþega í ákveðinni ferð.
+  - `eydaAkvednum(int id)` - Eyðir tiltekinni ferð úr listanum.
+  - `skodaAkvedinn(int id)` - Skoðar og prentar ákveðna ferð ef hún er í listanum.
+  - `~Ferdlinkedlist()` - Eyðir öllum hnútum í listanum og sér um minniseyðingu þegar klósin er eytt.
