@@ -124,4 +124,18 @@
 ## Dagsetning: 12/8/2023  
 - bý til main.cpp file í möppunni Kodinn lokaskil
 - Uploadaði skjölin sem voru í möppuni hlutaskil, líka í möppuna lokaskil
-- 
+
+### FerdNode.hpp  
+- **Safnaskilgreining:**
+  - `FerdNode` safn búið til til að halda utan um `Ferd` hluti og tengingar milli þeirra.
+
+- **Gagnatakmark:**
+  - `ferdin` - Pointer á `Ferd` hlut sem er geymdur í hverjum hnúti.
+  - `next` - Pointer á næsta hnút í safninu.
+
+- **Smiður:**
+  - `FerdNode::FerdNode(Ferd* ferdin)` - Skilgreindur smiður sem stillir gildi fyrir `ferdin` og `next`.
+
+- **Afvirkni Smiður:**
+  - `FerdNode::~FerdNode()` - Smiður sem eyðir `ferdin` hlutnum sem tengist þessum hnút í minni.
+
