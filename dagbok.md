@@ -134,6 +134,9 @@
 - Uploadaði skjölin sem voru í möppuni hlutaskil, líka í möppuna lokaskil
 - Bjó til filein: FerdNode.hpp, Ferdlinkedlist.hpp, Ferdlinkedlist.cpp
 
+### Batsferd.cpp  
+- bjó til breytu std::string yfirbyggðurtext sem iffar hvort this->yfirbyggð er 1 eða 0 og breytir innihaldinu á breytunni í annaðhvort "Já" eða "Nei". (breytingin er í fallinu prenta) 
+
 ### FerdNode.hpp  
 - **Safnaskilgreining:**
   - `FerdNode` safn búið til til að halda utan um `Ferd` hluti og tengingar milli þeirra.
