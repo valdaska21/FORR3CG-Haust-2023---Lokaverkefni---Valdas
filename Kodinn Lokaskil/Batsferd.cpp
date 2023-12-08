@@ -22,3 +22,7 @@ void Batsferd::prenta(){
               << ", Hámarksfjoldi: " << this->getHamarksfjoldi() 
               << ", Yfirbyggður: " << this->yfirbyggdur << std::endl;
 }
+
+std::string Batsferd::getType() {
+    return "Bátsferð";
+}
