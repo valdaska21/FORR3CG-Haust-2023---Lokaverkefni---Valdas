@@ -38,8 +38,30 @@ Markmiðið með þessu verkefni er að búa til forrit sem getur stjórnað mis
 - Committaði kannski ekki nógu þétt kóðanna í github.
 
 ### Leiðbeiningar fyrir viðmót
+- **Til að skrá nýja ferð:**
+   - Sláðu inn "skrá" ásamt tegund ferðarinnar: "bátsferð", "flugferð" eða "hjólaferð".
+   - Fylgdu því með upplýsingum eins og ID, fjölda bókaðra farþega, hámarksfjölda, og aukaupplýsingum eftir tegund (yfirbyggður fyrir bátferðir, áfangastaður fyrir flugferðir, lengd hjólferðar o.s.frv.).
+   - - `<skrá> <bátsferð/flugferð/hjólaferð> <"ID"> <"Fjölda bókaðra farðega"> <"hámarksfjölda"> <"bool Yfirbyggður: 1 eða 0/Áfangastaður: "texti"/lengdklst: "tala"">`
 
-Hér eiga að koma leiðbeiningar um hvernig á að nota forritið.
+- **Til að prenta upplýsingar:**
+   - Notaðu "prenta" og tilgreindu hvaða gerð af ferðum þú vilt prenta: "allt", "bátsferðir", "flugferðir", eða "hjólaferðir".
+   -  - `<prenta> <allt/bátsferðir/flugferðir/hjólaferðir>` 
+
+- **Til að skoða ákveðna ferð:**
+   - Sláðu inn "skoða" fylgt með ID á ferðinni sem þú vilt skoða nánar.
+   -  - `<skoða> <"ID">`
+
+- **Til að eyða ferð:**
+   - Þegar þú vilt eyða ferð, notaðu "eyða" og gefðu ID þeirrar ferðar sem þú vilt fjarlægja úr listanum.
+   -  - `<eyða> <"ID">`
+
+- **Til að breyta fjölda bókaðra farþega:**
+   - Notaðu "uppffjbókaðra" og gefðu ID ferðarinnar sem þú vilt breyta, ásamt nýjum fjölda bókaðra farþega.
+   -  - `<uppffjbókaðra> <"ID"> <"nýr fjöldi bókaðra farþega">`
+
+- **Hætta keyrir forritið út:**
+   - Sláðu inn "hætta" til að ljúka forritinu.
+   -  - `<hætta>`
 
 ### Myndband
 
