@@ -64,10 +64,4 @@ Markmiðið með þessu verkefni er að búa til forrit sem getur stjórnað mis
    -  - `<hætta>`
 
 ### Myndband
-
-Í myndbandinu á að sýna helstu eiginleika forritsins.
-
-- Skrá/sækja/eyða/uppfæra ferð.
-- Prenta ferð/ferðir.
-
-[Hlekkur á myndband sem sýnir virkni forritsins]()
+[Hlekkur á myndband sem sýnir virkni forritsins](https://github.com/valdaska21/FORR3CG-Haust-2023---Lokaverkefni---Valdas/blob/main/Myndband_a_notkun_forritsins_10mb.mp4)
