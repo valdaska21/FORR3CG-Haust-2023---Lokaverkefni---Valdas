@@ -27,7 +27,7 @@
 - **Breytingar í kóða (`Batsferd.cpp`, `FerdNode.hpp`):**
   - Bætt var við aðgerðum til að sýna upplýsingar um ferðir út frá ákveðnum skilyrðum og takmörkunum.
 
-- **Keyrsla á forriti (`12/9/2023`):**
+- **búin til main.cpp og keyrsla á forriti (`12/9/2023`):**
   - Forritið heldur áfram að þróa sig, bætir við fleiri aðgerðum til að vinna með mismunandi tegundir ferða og tengsl við notendur í gegnum skipunarglugga-viðmót. 
   
 Markmiðið með þessu verkefni er að búa til forrit sem getur stjórnað mismunandi gerðum ferða, tryggt að það geti bætt við, eytt, breytt og sýnt upplýsingar um ferðir.
@@ -35,7 +35,7 @@ Markmiðið með þessu verkefni er að búa til forrit sem getur stjórnað mis
 
 --- 
 ### Ef einhverjar kröfur voru ekki leystar þá þarf það að koma fram: 
-Allt var leyst sýnist mér.
+- Committaði kannski ekki nógu þétt kóðanna í github.
 
 ### Leiðbeiningar fyrir viðmót
 
