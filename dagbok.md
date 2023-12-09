@@ -199,3 +199,32 @@
   - `eydaAkvednum(int id)` - Eyðir tiltekinni ferð úr listanum.
   - `skodaAkvedinn(int id)` - Skoðar og prentar ákveðna ferð ef hún er í listanum.
   - `~Ferdlinkedlist()` - Eyðir öllum hnútum í listanum og sér um minniseyðingu þegar klósin er eytt.
+
+---  
+## Dagsetning: 12/9/2023  
+### main.cpp
+Markmið: Þetta forrit er hugsað sem viðmótsforrit sem stjórnar mismunandi tegundum ferða með notkun á klasum eins og Ferdlinkedlist, Batsferd, Flugferd, Hjolaferd o.fl.
+
+`int main()`:
+**Upphafsstilling gagna:**
+- Til að stjórna mismunandi ferðum er búið til tilvik af Ferdlinkedlist sem heitir ferdall.
+- Ferðir eru harðkóðaðar inn í kerfið með aðferðunum skraBatsferd, skraFlugferd og skraHjolaferd.
+
+**Tengsl við notanda með tölvuskjáargrafískt viðmót:**
+  - Forritið keyrir í lykkju sem bíður eftir notendaslag.
+  - Skipanir eins og "skrá", "prenta", "skoða", "eyða", "uppffjbókaðra" og "hætta" eru notaðar til að framkvæma mismunandi aðgerðir.
+
+**Stuðningur er við aðgerðir eins og:**
+  - Bæta við nýjum ferðum af mismunandi tegundum (bátsferð, flugferð, hjólaferð) með notkun á skrá.
+  - Prenta upplýsingar um allar ferðir eða ákveðnar tegundir ferða með prenta.
+  - Sýna upplýsingar um ákveðna ferð með skoða.
+  - Eyða ákveðinni ferð með eyða.
+  - Breyta fjölda bókaðra farþega í ákveðinni ferð með uppffjbókaðra.
+  - Lykkjan heldur áfram þar til notandinn slær inn "hætta", sem afslutar forritið.  
+
+**Notendatengsl:**
+  - Kóðinn les inntak frá notanda í gegnum "command- like interface" , flokkar skipanir og framkvæmir viðeigandi aðgerðir samkvæmt inntakinu.
+
+**Framkvæmdarstig:**
+  - Að bæta við ferðum af mismunandi gerðum, prenta upplýsingar um ferðir, breyta fjölda bókaðra farþega, skoða nánar ákveðnar ferðir og eyða ferðum eru aðgerðir sem hægt er að framkvæma með inntaki notenda.
+  - Þetta forrit gerir notendum kleift að stjórna og eiga samskipti við mismunandi gerðir ferða sem búa í tengdum lista.
